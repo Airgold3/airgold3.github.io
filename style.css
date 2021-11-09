@@ -6,7 +6,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-img{
+img
+{
     position: absolute;
     top: 35%;
     left: 50%;
@@ -18,10 +19,10 @@ img{
 {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/giphy.gif");
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("images/background.gif");
     background-size: cover;
+    background-position: center;
 }
-
 h1 
 {
     position: absolute;
@@ -32,14 +33,6 @@ h1
     color: #B92121;
 }
 .type
-{
-    color: white;
-}
-.blue
-{
-    color: #2aff;
-}
-.white
 {
     color: white;
 }
@@ -69,4 +62,18 @@ h1
 {
     transform: translateY(-15px);
     transition: 0.5s;
+}
+@media (max-width: 991px)
+{
+    h1
+    {
+        font-size: 2em;
+    }
+    .social-media
+    {
+        position: absolute;
+        top: 65%;
+        margin: 10px;
+        padding: 30px;        
+    }
 }
